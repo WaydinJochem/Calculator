@@ -14,12 +14,12 @@
 <body class="bg-dark container-fluid">
     <div class="position-absolute top-50 start-50 translate-middle border border-light border-2 p-4 rounded bg-primary bg-secondary bg-gradient">
         <div class="row">
-            <input type="text" placeholder="0" id="test" class="text-end">
+            <input type="" placeholder="0" id="test" class="text-end">
         </div>
         <br>
         <div class="row align-items-start">
-            <button onclick="" class="bg-danger clear col ">AC</button>
-            <button onclick="" class="bg-black bg-gradient delete col">⬅️</button>
+            <button onclick="clearValue()" class="bg-danger clear col ">AC</button>
+            <button onclick="deleteValue()" class="bg-black bg-gradient delete col">⬅️</button>
         </div>
         <div class="row">
            
@@ -28,7 +28,7 @@
             <button onclick="nomb('7')" class="bg-transparent bg-gradient  number col">7</button>
             <button onclick="nomb('8')" class="bg-transparent bg-gradient col">8</button>
             <button onclick="nomb('9')" class="bg-transparent bg-gradient col">9</button>
-            <button onclick="nomb('x')" class="bg-warning multiply col">x</button>
+            <button onclick="nomb('*')" class="bg-warning multiply col">x</button>
         </div>
         <div class="row">
             <button onclick="nomb('4')" class="bg-transparent bg-gradient col">4</button>
@@ -43,10 +43,10 @@
             <button onclick="nomb('+')" class="bg-warning addition col">+</button>
         </div>
         <div class="row">
-            <button onclick="nomb('/')" class="bg-warning division col"><img src="./Assets/icons/division-sign.svg" class="h-50 w-50" alt=""></button>
+            <button onclick="nomb('/')" class="bg-warning division col">/</button>
             <button onclick="nomb('0')" class="bg-transparent bg-gradient col">0</button>
             <button onclick="nomb('.')" class="bg-transparent dot col">.</button>
-            <button onclick="" class="bg-primary bg-gradient total col">=</button>
+            <button onclick="calculate()" class="bg-primary bg-gradient total col">=</button>
         </div>
     </div>
 

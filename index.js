@@ -1,24 +1,16 @@
-
-
-const  inputValue= document.querySelector("#test");
-const clearValue= document.querySelector(".clear");
-const deleteValue= document.querySelector(".delete");
-const multipyValue= document.querySelector(".multiply");
-const substractValue= document.querySelector(".subtract");
-const additionValue= document.querySelector(".addition");
-const totalValue= document.querySelector(".total");
-
+const inputValue = document.querySelector("#test");
 function nomb(number) {
     inputValue.value = inputValue.value + number;
 }
-function plus() {
+function clearValue() {
+    inputValue.value = "";
 }
-function minus() {
-    
+function deleteValue() {
+    inputValue.value = inputValue.value.slice(0, -1);
 }
-function multiply() {
 
-}
-function sum () {
-    totalValue.value = eval()
+function calculate() {
+    let x = inputValue.value;
+    let result = eval(x);
+    inputValue.value = result;
 }
